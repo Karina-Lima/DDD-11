@@ -1,17 +1,17 @@
 # DDD-11
-## Plataforma para sugestão de dicas de turismo na cidade de São Paulo. Desenvolvido para um projeto prático na Universidade Anhembi Morumbi pelos alunos:
+### Plataforma para sugestões de dicas de turismo na cidade de São Paulo. Desenvolvido em um projeto prático na Universidade Anhembi Morumbi pelos alunos:
+#
 
+- Amanda Gomes Macêdo
 
-Amanda Gomes Macêdo
+- Enzo Synthes Pinho 
 
-Enzo Synthes Pinho 
+- Erick Firmo Carneiro 
 
-Erick Firmo Carneiro 
+- Gabriel Ricardo da Silva 
 
-Gabriel Ricardo da Silva 
+- Karina Antunes de Lima 
 
-Karina Antunes de Lima 
+- Maria Júlia Anacleto Tiago 
 
-Maria Júlia Anacleto Tiago 
-
-Vitor Hugo Magalhães Marinho
+- Vitor Hugo Magalhães Marinho
