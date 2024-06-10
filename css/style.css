@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+  /* Paleta de cores */
+  --yummi: #b079c9;
+  --bubblegum: #d485cb;
+  --wine: #710448;
+
+  --yummi_claro: #c756c3;
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #222222;
+  /*
+
+  /* Métricas */
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------- Textos ------------------*/
+
+h1, h2, h3, h4, h5{
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+p{
+  color: var(--white);
+  font-size: 400;
+}
+
+
+/*-------------------------------------------*/
+
+/*----------- Barra de Navegação ------------*/
+
+.header {
+  background: var(--dark);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: var(--yummi);
+  transition: all ease-in 0.1s;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 35px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  min-height: 100vh;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* ------------------------------------------*/
+
+
+/* ------------ Dimensionamento ------------ */
+
+/* tamanho desktop */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
+/* tamanho mobile */
+
+@media (max-width: 47em) {
+  .header ul li {
+    margin-top: 20px;
+  }
+
+  .header ul li:first-child {
+    margin-top: 50px; 
+  }
+
+  .header ul li:nth-last-child(2) {
+    margin-right: 0 !important; 
+  }
+
+  .header ul {
+    background-color: var(--black);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  input#search-bar {
+    margin-top: 80px; 
+    width: 100vh;
+  }
+
+  .content{
+    padding: 20px;
+  }
+  
+
+}
+
+
+/* ------------------------------------------*/
+
+
+/* ----------- Barra de pesquisa ----------- */
+
+input#search-bar {
+  width: calc(100% - 40px);
+  height: 43px;
+  padding: 0 10px; 
+  background: transparent;
+  margin: 5px auto;
+  font-size: 1rem;
+  border: 1px solid #fff; 
+  border-radius: 20px;
+  outline: none;
+  color: #fff; 
+}
+
+input#search-bar::placeholder {
+  color: #888; 
+}
+
+.search-icon {
+  color: #fff; 
+}
+
+
+/* ------------------------------------------*/
+
+
+/* --------------- Paginação --------------- */
+
+/* Pagina_padrão */
+.page-base {
+  background-color: var(--dark);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-home {
+  position: relative;
+  background-image: url(../img/lula.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-home .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 0; 
+}
+
+.page-home .content{
+  z-index: 2;
+  text-align: center;
+}
+
+
+/* Pagina wine*/
+.page-wine {
+  background: var(--wine);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Pagina yummi*/
+.page-yummi {
+  background: var(--yummi);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pagina bubblegum*/
+.page-bubblegum {
+  background: var(--bubblegum);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Pagina_Backdrop*/
+.page-backdrop {
+  position: relative;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/sp_drop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------------------------------------*/
