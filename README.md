@@ -1,5 +1,5 @@
 # DDD-11
-### Plataforma para sugestões de dicas de turismo na cidade de São Paulo. Desenvolvido em um projeto prático na Universidade Anhembi Morumbi pelos alunos:
+Plataforma para sugestões de dicas de turismo na cidade de São Paulo. Desenvolvido em um projeto prático na Universidade Anhembi Morumbi pelos alunos:
 #
 
 - Amanda Gomes Macêdo
