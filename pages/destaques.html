@@ -2,59 +2,95 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Destaques</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Destaques</title>
 </head>
 
 <body>
 
-    <!-- Barra de Navegação -->
-    <header class="header">
-        <a href="../index.html" class="logo">
-            <img src="../img/logo.svg" style="height: 150px; margin-top: -16px; position: absolute;">
-        </a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu" style="padding-left: 20px; padding-right: 20px;">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="destaques.html"><b>Destaques</b></a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li style="margin-right: 20px;"><a href="perfil.html">Perfil</a></li>
+  <!-- Barra de Navegação -->
+  <header class="header">
+    <a href="../index.html" class="logo">
+      <img src="../img/logo.svg" style="height: 150px; margin-top: -16px; position: absolute;">
+    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu" style="padding-left: 20px; padding-right: 20px;">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="destaques.html"><b>Destaques</b></a></li>
+      <li><a href="categorias.html">Categorias</a></li>
+      <li style="margin-right: 20px;"><a href="perfil.html">Perfil</a></li>
 
-            <li>
-                <div style="position: relative;">
-                    <input type="text" id="search-bar" placeholder="O que você procura?"
-                        style="width: 320px; margin: 10px auto; padding-right: 40px;">
-                    <button id="search-button"
-                        style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; border: none; background: none; cursor: pointer;">
-                        <i class="fas fa-search search-icon" style="font-size: 18px; color: #fff;"></i>
-                    </button>
-                </div>
-            </li>
-        </ul>
-    </header>
-
-    <!-- Bubblegum -->
-    <div class="page-bubblegum">
-        <div class="content">
-            <h1>Destaques</h1>
+      <li>
+        <div style="position: relative;">
+          <input type="text" id="search-bar" placeholder="O que você procura?"
+            style="width: 340px; margin: 10px auto; padding: 0 50px 0 15px;">
+          <button id="search-button"
+            style="position: absolute; top: 50%; transform: translateY(-50%); right: 10%; border: none; background: none; cursor: pointer;">
+            <i class="fas fa-search search-icon" style="font-size: 18px; color: #fff;"></i>
+          </button>
         </div>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Bubblegum -->
+  <div class="page-yummi">
+    <div class="contentHome">
+      <h1>Destaques</h1>
     </div>
+  </div>
 
-    <!-- Base -->
-    <div class="page-base">
+  <!-- Base -->
+  <div class="page-base">
+    <div class="content">
+      <div class="left">
+        <div class="leftBanner" style="font-size: 1.25rem;">Exposições<b> Farol Santander:</b></div>
+        <img class="leftBannerImage" src="../img/arte.png">
+      </div>
+      <div class="right">
+        <p style="font-size: 1.1rem;"><b>Conheça a magia de Yoshitaka Amano</b><br>A arte de Yoshitaka Amano representa
+          um convite à transcendência, abrindo um portal para um universo onde o real e o fantástico se encontram, e o
+          sonho se confunde com a realidade. Suas obras, que transcendem a mera visualidade, são verdadeiros convites
+          para explorar mundos desconhecidos e refletir sobre a complexidade da existência humana. <br><a
+            href="https://www.farolsantander.com.br/sp/exposicao/yoshitaka-amano-alem-da-fantasia"
+            style="text-decoration: underline; font-weight: 500; color:#a83c7f;">Site oficial</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="page-yummi">
+    <div class="content">
+      <div class="left">
+        <img class="leftBannerImage" src="../img/arte2.png">
+      </div>
+
+      <div class="right">
+        <p style="font-size: 1.1rem;"><b><u>Pancetti:</u> o mar quando quebra na praia...</b><br>“Pancetti – o mar
+          quando quebra na praia…” apresenta uma seleção de obras que nunca antes estiveram reunidas, pertencentes a
+          coleções particulares e instituições. É uma oportunidade rara e única de conhecer as várias facetas de
+          Pancetti, um pintor original e intensamente pessoal.<br><a
+            href="https://www.farolsantander.com.br/sp/exposicao/pancetti-o-mar-quando-quebra-na-praia"
+            style="text-decoration: underline; font-weight: 500; color:#710448;">Site oficial</a></p>
+      </div>
 
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div class="page-backdrop">
+  <a href="#top" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
 
-    </div>
+  <!-- Footer -->
+  <div class="page-backdrop">
 
-    <script src="../JS/scripts.js"></script>
+  </div>
+
+  <script src="../js/scripts.js"></script>
 </body>
 
 </html>

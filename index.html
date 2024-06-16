@@ -22,12 +22,14 @@
       <li><a href="index.html"><b>Home</b></a></li>
       <li><a href="pages/destaques.html">Destaques</a></li>
       <li><a href="pages/categorias.html">Categorias</a></li>
-      <li style="margin-right: 20px;"><a href="pages/perfil.html">Perfil</a></li> 
-    
+      <li style="margin-right: 20px;"><a href="pages/perfil.html">Perfil</a></li>
+
       <li>
         <div style="position: relative;">
-          <input type="text" id="search-bar" placeholder="O que você procura?" style="width: 320px; margin: 10px auto; padding-right: 40px;">
-          <button id="search-button" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; border: none; background: none; cursor: pointer;">
+          <input type="text" id="search-bar" placeholder="O que você procura?"
+            style="width: 340px; margin: 10px auto; padding: 0 50px 0 15px;">
+          <button id="search-button"
+            style="position: absolute; top: 50%; transform: translateY(-50%); right: 10%; border: none; background: none; cursor: pointer;">
             <i class="fas fa-search search-icon" style="font-size: 18px; color: #fff;"></i>
           </button>
         </div>
@@ -39,40 +41,102 @@
   <!-- Home -->
   <div class="page-home">
     <div class="background"></div>
-    <div class="content">
+    <div class="contentHome">
       <h1>O que você vai encontrar aqui?</h1>
+
+      <div class="button-container">
+        <a href="#categoria" class="button">Principais&nbsp;<b>Eventos</b></a>
+        <a href="#roles_gastronomicos" class="button"><b>Recomendações</b>&nbsp;de Lugares</a>
+        <a href="#info" class="button"><b>Avaliações</b>&nbsp;de Outros Usuários</a>
+      </div>
+
     </div>
   </div>
 
   <!-- Base -->
-  <div class="page-base">
-
+  <div class="page-base" id="info">
+    <div class="content">
+      <div class="left">
+        <p><b>Informações do seu destino em tempo real.</b><br>
+          Obtenha informações sobre o clima, horário de funcionamento, rotas atualizadas, classificações de usuários e
+          outras informações relevantes.</p>
+      </div>
+      <div class="right">
+        <img src="img/info.png" width="100%">
+      </div>
+    </div>
   </div>
+
 
   <!-- Yummi -->
   <div class="page-yummi">
-
+    <div class="content">
+      <div class="left">
+        <div class="leftBanner">Viva <b>experiências</b></div>
+        <img class="leftBannerImage" src="img/sampasky.png">
+      </div>
+      <div class="right">
+        <p>Explore os cantos mais irados da cidade e curta experiências incríveis que vão muito além do básico. Descubra
+          novos rolês e aproveite ao máximo.</p>
+      </div>
+    </div>
   </div>
+
 
   <!-- Base -->
   <div class="page-base">
-
+    <div class="content">
+      <div class="left">
+        <div id="roles_gastronomicos" class="leftBanner">Rolês <b>Gastronômicos</b>
+          <p>Explore desde food trucks secretos até os points mais hypados da cidade. Não perca nenhum momento dessa
+            tour gastronômica. Bora transformar cada rolê em uma história para contar!</p>
+        </div>
+      </div>
+      <div class="right">
+        <img src="img/restaurant.png">
+      </div>
+    </div>
   </div>
 
   <!-- bubblegum -->
   <div class="page-bubblegum">
+    <div class="contentHome">
 
+      <div id="categoria" class="cardGroup">
+        <a href="#" class="card" style="background-image: url('img/restaurantes.png')">
+          <div class="card-title">Restaurantes</div>
+        </a>
+        <a href="#" class="card" style="background-image: url('img/bares.png')">
+          <div class="card-title">Bares</div>
+        </a>
+        <a href="#" class="card" style="background-image: url('img/parques.png')">
+          <div class="card-title">Parques</div>
+        </a>
+        <a href="#" class="card" style="background-image: url('img/lazer.png')">
+          <div class="card-title">Lazer</div>
+        </a>
+        <a href="#" class="card" style="background-image: url('img/cultural.png')">
+          <div class="card-title">Cultural</div>
+        </a>
+        <a href="#" class="card" style="background-image: url('img/eventos.png')">
+          <div class="card-title">Eventos</div>
+        </a>
+      </div>
+
+    </div>
   </div>
 
 
-
+  <a href="#top" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
 
   <!-- Footer -->
   <div class="page-backdrop">
 
   </div>
 
-  <script src="JS/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
